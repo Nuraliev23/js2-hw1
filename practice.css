@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+}
+
+.passport{
+        background-color: transparent;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; 
+        width: 1000px;
+        height: 600px;
+        margin: auto;
+        margin-top: 100px;
+
+}
+.passport_inner{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+.front_in{
+    display: flex;
+    justify-content: space-around;
+    line-height: 70px;
+    align-items: center;
+    background-image: url(./copy-space-straw-hat-map.jpg);
+    background-position: center;
+    background-size: cover;
+    font-weight: 900;
+}
+
+.passport:hover .passport_inner {
+    transform: rotateY(180deg);
+  }
+  .image1{
+    width: 40%;
+}
+.menuText{
+    width: 50%;
+}
+.nation{
+    display: flex;
+    justify-content: space-between;
+}
+.etibor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.front_in, .front_back {
+    position: absolute;
+    /* -webkit-backface-visibility: hidden;  */
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+.front_back{
+    transform: rotateY(180deg);
+background-image: url(./simple-white-tajikistan-map-on-gray-background-vector-illustration-eps-10-file-2R963JK.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    line-height: 70px;
+}
